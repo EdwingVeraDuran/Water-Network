@@ -36,7 +36,7 @@ class DXFParser:
         for node in self.nodes:
             x, y = node.pos
             if abs(x - coord[0]) < self.tol and abs(y - coord[1]) < self.tol:
-                return node.id
+                return node
         return None
     
     def parse_edges(self):

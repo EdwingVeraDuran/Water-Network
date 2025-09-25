@@ -13,5 +13,5 @@ class GraphBuilder:
         for node in self.nodes:
             self.graph.add_node(node.id, pos=node.pos, type=node.type, color=node.color)
         for edge in self.edges:
-            self.graph.add_edge(edge.n1, edge.n2)
+            self.graph.add_edge(edge.n1.id, edge.n2.id)
         return self.graph
