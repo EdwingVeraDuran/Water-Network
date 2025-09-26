@@ -10,4 +10,8 @@ if __name__ == "__main__":
     builder = GraphBuilder(nodes, edges)
     G = builder.build()
     
+    farthest, dist = builder.farthest_node_weighted
+    print(f"Nodo más lejano: {farthest}")
+    print(f"Distancia nodo más lejano: {dist}")
+    
     Visualizer.plot(G)

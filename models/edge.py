@@ -14,4 +14,4 @@ class Edge:
             return math.dist((x1, y1), (x2, y2))
         
     def __repr__(self):
-        return f"<Edge {self.n1} - {self.n2}"
+        return f"<Edge {self.n1} - {self.n2}>"
